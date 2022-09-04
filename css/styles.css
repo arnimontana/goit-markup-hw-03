@@ -41,7 +41,7 @@ li {
 .logo {
     font-family: var(--secondary-font);        
     font-weight: 700;
-    font-size: 26px;   
+    font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
@@ -261,7 +261,7 @@ body {
 
 .modal-open-btn:hover,
 .modal-open-btn:focus {
-    /*display: flex;*/
+    /*display: flex;*/    
     cursor: pointer;
     background: var(--accent-color-btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -282,6 +282,9 @@ body {
 }
 
 .list-btn {
+/*
+    display: inline-block;
+*/
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
