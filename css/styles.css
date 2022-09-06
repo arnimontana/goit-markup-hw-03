@@ -2,6 +2,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -37,6 +38,19 @@ li {
 .list {
     list-style: none;
 }
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+
+/*
+.page-header {
+    
+}
+*/
 
 .logo {
     font-family: var(--secondary-font);        
@@ -83,21 +97,30 @@ body {
 }
 
 .container {
-    max-width: 1200px;    
-/*
     display: flex;
     flex-direction: inline;
-*/
+    max-width: 1200px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.page-navigation::after {
+    display: block;
+    width: 1200px;
+    height: 4px;
+    background-color: #757575;
+}
+
 /*
+    display: flex;
+
     justify-content: center;
-*/
     align-content: center;
     align-items: center;
-}
+*/
 
 /*========= HEADER ==========*/
 
@@ -119,14 +142,16 @@ body {
     display: flex;
     column-gap: 50px;
     align-items: center;
-    padding-left: 0;
+    padding-right: 0;
+    vertical-align: middle
 }
 
 .contacts {
     display: flex;
     column-gap: 50px;
     align-items: center;
-    padding-right: 0;
+    margin-left: auto;
+    vertical-align: middle
 }
 
 .menu-link {
