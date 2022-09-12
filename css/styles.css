@@ -45,7 +45,6 @@ ul {
     margin-left: 0;
 }
 
-
 .logo {
     font-family: var(--secondary-font);        
     font-weight: 700;
@@ -90,19 +89,11 @@ body {
     letter-spacing: 0.03em;
 }
 
-/*========= HEADER ==========*/
+/*==== HEADER ====*/
 
 .header {
     margin-top: auto;
     margin-bottom: auto;
-}
-
-.navigation {
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 .container {
@@ -113,7 +104,52 @@ body {
     padding-right: 15px;
 }
 
-/* ====== line after "navigation" section ======== */
+.navigation {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-navigation-list {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin-right: auto;
+    vertical-align: middle
+}
+
+.contacts-navigation-links {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin-left: auto;
+    vertical-align: middle
+}
+
+.navigation-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+    color: var(--accent-color);
+}
+
+.contacts-mail, 
+.contacts-navigation-phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* ==== line after "navigation" section ==== */
 
 /*
 .navigation::after {
@@ -124,7 +160,7 @@ body {
 }
 */
 
-.menu-list,  
+.list-portfolio,  
 .menu-specification,
 .menu-team {
     display: flex;
@@ -134,36 +170,7 @@ body {
     vertical-align: middle
 }
 
-.menu-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color-theme-light);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
-
-.contacts {
-    display: flex;
-    column-gap: 50px;
-    align-items: center;
-    margin-left: auto;
-    vertical-align: middle
-}
-
-.contacts-mail, 
-.contacts-phone-number {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-/*==== HERO ====*/
+/*==== HERO index.html ====*/
 
 .hidden-text-heading {
     position: absolute;
@@ -187,6 +194,10 @@ body {
     color: var(--primary-text-color-theme-light);
 }
 
+.menu-features {
+    display: flex;
+}
+
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -203,26 +214,25 @@ body {
     color: var(--secondary-text-color-theme-dark);
 }
 
-.portfolio-title {
+.menu-team {
+    font-style: normal;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-title-name {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-light);
 }
 
-.portfolio-title-txt {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;    
-    color: var(--secondary-text-color-theme-light);
-}
-
-.img-page1,
-.img-page2 {
-    display: block;
-    max-width: 100%;
-    height: 100%;
+.team-title-position {
+     color: var(--secondary-text-color-theme-dark);
+     line-height: 1.19;
+     font-size: 16px;
+     letter-spacing: 0.03em;
 }
 
 .mail,
@@ -237,13 +247,13 @@ body {
     color: var(--accent-color);
 }
 
-/*==== HERO ====*/
-
 .section {
     display: flex;
 }
 
-.solutions { 
+.solutions {
+    display: flex;
+    flex-direction: column;
     color: var(--primary-text-color-theme-dark);
     background: var(--background-color);
     align-items: center;
@@ -254,8 +264,7 @@ body {
     font-size: 44px;
     line-height: 1.3;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
 .solutions-btn {
@@ -283,23 +292,25 @@ body {
     color: var(--primary-text-color-theme-dark);                                                             
 }
 
+/*
 .solutions,
 .features,
 .specification,
 .team {
     flex-direction: column;
 }
+*/
 
-.list-btn:hover,
-.list-btn:focus {
-
-    cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--primary-text-color-theme-dark);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.img-page1,
+.img-page2 {
+    display: block;
+    max-width: 100%;
+    height: 100%;
 }
 
-.menu-list-btns {
+/*==== HERO portfolio.html ====*/
+
+.menu-portfolio-btns {
     display: flex;
     font-family: var(--primary-font);
     font-weight: 500;
@@ -313,31 +324,46 @@ body {
     min-width: 38px;
 }
 
-.menu-team {
-    font-style: normal;
-    flex-direction: row;
-    align-items: center;
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.team-title-name {
+.portfolio-title {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color-theme-light);
 }
 
-.team-title-position {
-     color: var(--secondary-text-color-theme-dark);
-     line-height: 1.19;
-     font-size: 16px;
-     letter-spacing: 0.03em;
+.portfolio-title-txt {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;    
+    color: var(--secondary-text-color-theme-light);
+}
+
+.list-portfolio {
+    flex-flow: row wrap;
+    padding: 0;
+    space-betveen
+}
+
+.portfolio-item {
+    font-style: normal;
+    padding: 0;
 }
 
 /* ==== identical to box height ====
 text-align: center;
 letter-spacing: 0.03em;
 }*/
+
+/* ==== FOOTER ==== */
 
 .page-footer {
     background: var(--background-color);
@@ -348,7 +374,13 @@ letter-spacing: 0.03em;
 }
 
 .menu-item {
-    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
     padding: 0;
 }
 
@@ -375,9 +407,7 @@ letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-dark);
     /*
     border: 1px solid #000000;
-    */    
+    */
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* ===== /HERO =====*/
 
