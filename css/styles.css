@@ -312,26 +312,51 @@ ntainer
 
 /*==== HERO portfolio.html ====*/
 
+
 .menu-portfolio-btns {
     display: flex;
+    justify-content: center;    
+}
+
+
+.portfolio-btn {
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-light);
+    gap: 8px;
+}
+
+/*
+.menu-portfolio-btns {
+    display: flex;
+    justify-content: center;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-dark)
-    var(--primary-text-color-theme-light);
+    color: var(--primary-text-color-theme-dark);
+    color: var(--primary-text-color-theme-light);
     background-color: var(--btn-background-color);
     border-radius: 4px;
     min-width: 38px;
+    padding: 0;
 }
+*/
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--primary-text-color-theme-dark);
+    /*
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    */
 }
 
 .list-portfolio-cards {
